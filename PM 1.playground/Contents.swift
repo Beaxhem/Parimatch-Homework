@@ -22,16 +22,6 @@ func factorialIterative(n: Int) -> Int {
 factorialIterative(n: 4)
 
 
-//func fib(n: Int) -> Int {
-//    if n == 1 || n == 2 {
-//        return 1
-//    }
-//
-//    return fib(n: n-1) + fib(n: n-2)
-//}
-//
-//fib(n: 3)
-
 func fib(n: Int) -> [Int] {
     var res: [Int] = [0, 1]
     
