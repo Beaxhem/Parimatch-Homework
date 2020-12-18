@@ -35,7 +35,12 @@ func fib(n: Int) -> [Int] {
 fib(n: 10)
 
 
-func piFraction(n: Int) -> Int {    
+func piFraction(n: Int) -> Int? {
+    if n > 16 {
+        print("Can't handle this number")
+        return nil
+    }
+    
     let piString = String(Double.pi)
     
     let startIndex = piString.index(piString.startIndex, offsetBy: n)
@@ -45,4 +50,4 @@ func piFraction(n: Int) -> Int {
     
 }
 
-piFraction(n: 16)
+piFraction(n: 17)

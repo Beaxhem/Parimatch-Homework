@@ -9,7 +9,6 @@ class BettingSystem {
     
     private var bets: [Username: [Bet]] = [:]
     
-    
     // Betting
     
     func newBet(betString: String, username: String) {
@@ -34,8 +33,6 @@ class BettingSystem {
         
         completion(.success(bets))
     }
-    
-    
 }
 
 
